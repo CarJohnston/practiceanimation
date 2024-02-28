@@ -1,0 +1,47 @@
+/* this is where all of your CSS styles go */
+
+.grid_container {
+	width: 1500px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 50%; /* for optical centering */
+	margin-top: 250px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Fjalla One';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes ee_fade {
+	0% {opacity: 0; margin-left: -750px;}
+	50% {opacity: 0;}
+	100% { opacity: 1; }
+}
+
+.ee {
+	opacity: 0%;
+	animation: ee_fade 3s forwards;
+}
+
+@keyframes e_fade {
+	0% {opacity: 1; }
+	50% {opacity: 1; }
+	100% { opacity: 0; margin-left: 750px; }
+	20% {margin-left: 0px;}
+	}
+
+.e {
+	opacity: 100%;
+	position: relative;
+	animation: e_fade 3s forwards;
+}
+
+.s {
+	position: absolute;
+	margin-left: 160px;
+}
